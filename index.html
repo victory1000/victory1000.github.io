@@ -18,14 +18,24 @@ Test text
 <input type="button" value="нажать" id="raz"/>
 
 <script>
- 
+$html = file_get_contents("https://game.betgamestv.ru/ext/game/results/betgamestvru/2019-05-24/7/1/"); 
+console.log($html);
 </script>
 
 <br/>
-<a> Test new text </a>
+<a> Test new text2 </a>
 <br/>
 
 <br/><br/>
 Спасибо. До новых встреч!
+<br/>
+
+<iframe src="https://game.betgamestv.ru/ext/game/results/betgamestvru/2019-05-24/7/1/" height="200">
+            Test Iframe
+</iframe>
+
+<br/>
+
+
 </body>
 </html>
