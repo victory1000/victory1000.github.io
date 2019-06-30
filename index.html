@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 	<title>The name of Site</title>
 </head>
@@ -18,25 +18,12 @@ Test text
 <input type="button" value="нажать" id="raz"/>
 
 <script>
-document.getElementById('raz').addEventListener('click', function(){
-  var http = new XMLHttpRequest();
-  http.open('GET', 'https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest');  // составить асинхронный (по умолчанию true) GET запрос страницы
-  http.onreadystatechange = function () {  // обратная связь: отдаёт ответ на запрос
-    if (this.readyState == 2) {  // в период, когда запрос уже отправлен, но полный ответ ещё не пришёл, самое время показывать иконку загрузки
-      input.disabled=true;
-    }
-    if (this.readyState == 4 && this.status == 200) {  // отследить момент, когда пришёл полный ответ
-      alert( this.responseText );  // this.responseText — ответ в виде текста
-      input.disabled=false;
-    }
-  }
-  http.send(null);  // отправить запрос
-}, false); 
+ 
 </script>
 
-
-
-
+<br/>
+<a> Test new text </a>
+<br/>
 
 <br/><br/>
 Спасибо. До новых встреч!
