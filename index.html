@@ -17,13 +17,10 @@ Test text
 
 <input type="button" value="нажать" id="raz"/>
 
-<script>
-$html = file_get_contents("https://game.betgamestv.ru/ext/game/results/betgamestvru/2019-05-24/7/1/"); 
-console.log($html);
-</script>
+<script type="text/javascript" src="jquery.js"></script>
 
 <br/>
-<a> Test new text2 </a>
+<a> Test new text3 </a>
 <br/>
 
 <br/><br/>
@@ -35,6 +32,12 @@ console.log($html);
 </iframe>
 
 <br/>
+
+
+<script> 
+var x = $(".wheel-circle");
+console.log(x[0].innerHTML);
+</script>
 
 
 </body>
